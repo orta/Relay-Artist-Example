@@ -1,0 +1,31 @@
+{
+	"name": "ArtistExample",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"test": "jest"
+	},
+	"dependencies": {
+		"babel-relay-plugin": "https://github.com/alloy/relay/releases/download/v0.9.3/babel-relay-plugin-0.9.3.tgz",
+		"react": "~15.4.0-rc.4",
+		"react-native": "0.40.0",
+		"react-relay": "https://github.com/alloy/relay/releases/download/v0.9.3/react-relay-0.9.3.tgz"
+	},
+	"devDependencies": {
+		"babel-jest": "18.0.0",
+		"babel-preset-react-native": "1.9.1",
+		"jest": "18.1.0",
+		"react-test-renderer": "~15.4.0-rc.4"
+	},
+	"graphql": {
+    "file": "data/schema.json",
+    "tsInterfaceName": "RelayProps"
+	},
+	"jest": {
+		"preset": "react-native"
+	},
+	"rnpm": {
+    "assets": ["./assets"]
+  }
+}
